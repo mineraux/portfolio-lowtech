@@ -1,4 +1,5 @@
-import '../assets/styles/header.scss'
+import './header.scss'
+import HeaderDom from './index.html'
 
 export default class Header extends HTMLElement {
   constructor() {
@@ -7,8 +8,6 @@ export default class Header extends HTMLElement {
   }
 
   connectedCallback () {
-    this.root.innerHTML = `
-    <header>My header</header>
-    `
+    this.root.innerHTML = HeaderDom
   }
 }
