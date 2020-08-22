@@ -1,13 +1,12 @@
-import './header.scss'
-import HeaderDom from './index.html'
+import HeaderHtml from './index.html'
 
 export default class Header extends HTMLElement {
   constructor() {
     super()
-    this.root = this.attachShadow({mode: 'closed'})
+    this.root = this.attachShadow({mode: 'open'})
   }
 
   connectedCallback () {
-    this.root.innerHTML = HeaderDom
+    this.root.innerHTML = HeaderHtml
   }
 }
