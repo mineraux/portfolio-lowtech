@@ -65,7 +65,7 @@ h2 {
 INTRO and OUTRO
 */
 .intro-wrapper {
-  height: 62vh;
+  min-height: 62vh;
 }
 .outro-wrapper {
   height: 10vh;
@@ -118,6 +118,10 @@ PROJECTS
 }
 
 @media (max-width: 840px) {
+  .intro-wrapper {
+    margin-bottom: 50px;
+  }
+
   .project-list {
     grid-template-columns: 1fr;
   }
